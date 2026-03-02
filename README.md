@@ -47,5 +47,7 @@ Note: The default manager is set to "yoav" in the code.
 ## 🔧 Technical Details
 
 Networking: TCP Sockets.
+
 Concurrency: select.select for handling multiple clients simultaneously on a single thread.
+
 Protocol: Custom message framing (Length-prefixing) to prevent packet fragmentation issues.
