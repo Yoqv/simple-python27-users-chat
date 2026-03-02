@@ -35,3 +35,17 @@ Inside the chat, you can use the following commands:
    Open a terminal and run:
    ```bash
    python server.py
+
+Note: The default manager is set to "yoav" in the code.
+
+2. Start the Client(s):
+    Open another terminal (or multiple) and run:
+   ```bash
+    python client.py
+3. Connect: Enter a unique username and start chatting!
+
+## 🔧 Technical Details
+
+Networking: TCP Sockets.
+Concurrency: select.select for handling multiple clients simultaneously on a single thread.
+Protocol: Custom message framing (Length-prefixing) to prevent packet fragmentation issues.
